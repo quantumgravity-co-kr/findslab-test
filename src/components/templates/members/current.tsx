@@ -5,6 +5,9 @@ import { useStoreModal } from '@/store/modal'
 import { MembersDetailTemplate } from './detail'
 import type { MemberData } from '@/types/data'
 
+// Image Imports
+import banner2 from '@/assets/images/banner/2.png'
+
 const degreeLabels = {
   phd: 'Ph.D. Students',
   ms: 'M.S. Students',
@@ -83,7 +86,7 @@ export const MembersCurrentTemplate = () => {
       <div className="relative w-full h-332 overflow-hidden">
         <div
           className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: 'url(/images/banner/2.png)' }}
+          style={{ backgroundImage: `url(${banner2})` }}
         />
         <div className="absolute inset-0 bg-black/40" />
         <div className="relative h-full flex items-center justify-center">

@@ -3,6 +3,9 @@ import { Link } from 'react-router-dom'
 import { Award, Trophy, Medal, Home, ChevronDown, ChevronUp } from 'lucide-react'
 import type { HonorsData, HonorItem } from '@/types/data'
 
+// Image Imports
+import banner1 from '@/assets/images/banner/1.png'
+
 type FilterType = 'all' | 'honor' | 'award'
 
 export const AboutHonorsTemplate = () => {
@@ -72,7 +75,7 @@ export const AboutHonorsTemplate = () => {
       <div className="relative w-full h-332 overflow-hidden">
         <div
           className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: 'url(/images/banner/1.png)' }}
+          style={{ backgroundImage: `url(${banner1})` }}
         />
         <div className="absolute inset-0 bg-black/40" />
         <div className="relative h-full flex items-center justify-center">

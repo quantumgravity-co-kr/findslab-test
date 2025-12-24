@@ -2,6 +2,9 @@ import { memo, useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { Image as ImageIcon, Calendar, Home } from 'lucide-react'
 
+// Image Imports
+import banner4 from '@/assets/images/banner/4.png'
+
 interface GalleryItem {
   id: string;
   title: string;
@@ -80,7 +83,7 @@ export const ArchivesGalleryTemplate = () => {
       <div className="relative w-full h-332 overflow-hidden">
         <div
           className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: 'url(/images/banner/4.png)' }}
+          style={{ backgroundImage: `url(${banner4})` }}
         />
         <div className="absolute inset-0 bg-black/40" />
         <div className="relative h-full flex items-center justify-center">

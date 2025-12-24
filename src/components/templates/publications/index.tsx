@@ -19,6 +19,9 @@ import {
 import { useStoreModal } from '@/store/modal'
 import type { Publication, AuthorsData } from '@/types/data'
 
+// Image Imports
+import banner3 from '@/assets/images/banner/3.png'
+
 // 필터 모달 컴포넌트
 const FilterModal = ({
   filters,
@@ -347,7 +350,7 @@ export const PublicationsTemplate = () => {
       <div className="relative w-full h-332 overflow-hidden">
         <div
           className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: 'url(/images/banner/3.png)' }}
+          style={{ backgroundImage: `url(${banner3})` }}
         />
         <div className="absolute inset-0 bg-black/40" />
         <div className="relative h-full flex items-center justify-center">

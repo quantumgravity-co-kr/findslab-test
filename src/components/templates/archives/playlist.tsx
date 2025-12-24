@@ -2,6 +2,9 @@ import { memo, useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { Play, Clock, Calendar, Home } from 'lucide-react'
 
+// Image Imports
+import banner4 from '@/assets/images/banner/4.png'
+
 interface PlaylistItem {
   title: string;
   date: string;

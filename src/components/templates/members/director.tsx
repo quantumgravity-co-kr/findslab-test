@@ -59,7 +59,7 @@ const education = [
       { role: 'Graduate Student Representative', context: 'Department of Industrial and Systems Engineering', period: '2021.09 - 2025.01' },
     ],
     awards: ['Best Doctoral Dissertation Award, Korean Operations Research and Management Science Society (KORMS, 한국경영과학회)'],
-    logo: '/images/logos/kaist.png'
+    logo: logoKaist
   },
   {
     school: 'KAIST',
@@ -70,7 +70,7 @@ const education = [
     krName: '한국과학기술원 (KAIST) 산업및시스템공학 공학석사',
     advisor: 'Woo Chang Kim',
     awards: ["Best Master's Thesis Award, Korean Institute of Industrial Engineers (KIIE, 대한산업공학회)"],
-    logo: '/images/logos/kaist.png'
+    logo: logoKaist
   },
   {
     school: 'Kyung Hee',
@@ -85,19 +85,19 @@ const education = [
       { role: 'President', context: '7th Student Council, Department of Industrial and Management Systems Engineering', period: '2016.01 - 2016.12' },
     ],
     awards: ['Valedictorian, 1st out of 86 students'],
-    logo: '/images/logos/kyunghee.png'
+    logo: logoKyunghee
   },
 ]
 
 const employment = [
-  { position: 'Assistant Professor', organization: "Dongduk Women's University", period: '2025.09 – Present', location: 'Division of Business Administration, College of Business', krOrg: '조교수 / 동덕여자대학교 경영대학 경영융합학부', logo: '/images/logos/dwu.png' },
-  { position: 'Director', organization: 'FINDS Lab.', period: '2025.06 – Present', location: 'FINDS Lab.', krOrg: '디렉터 / FINDS Lab.', logo: '/images/logos/finds.png' },
-  { position: 'Lecturer', organization: 'Kangnam University', period: '2025.03 – 2026.02', location: 'Department of Electronic and Semiconductor Engineering', krOrg: '강사 / 강남대학교 공과대학 전자반도체공학부', logo: '/images/logos/kangnam.png' },
-  { position: 'Lecturer', organization: 'Korea University', period: '2025.03 – 2026.02', location: 'Digital Business Major, Division of Convergence Business', krOrg: '강사 / 고려대학교 글로벌비즈니스대학 융합경영학부 디지털비즈니스전공', logo: '/images/logos/korea.png' },
-  { position: 'Lecturer', organization: 'Kyung Hee University', period: '2024.03 – 2024.08', location: 'Department of Industrial and Management Systems Engineering', krOrg: '강사 / 경희대학교 공과대학 산업경영공학과', logo: '/images/logos/kyunghee.png' },
-  { position: 'Research Consultant', organization: 'WorldQuant Brain', period: '2022.06 – Present', location: 'WorldQuant Brain', krOrg: '연구 컨설턴트 / 월드퀀트 브레인', logo: '/images/logos/worldquant.jpg' },
-  { position: 'Intern', organization: 'EY Consulting', period: '2020.03 – 2020.05', location: 'Performance Improvement Department', krOrg: '인턴 / EY컨설팅 성과개선팀', logo: '/images/logos/ey.png' },
-  { position: 'Founder', organization: 'JL Creatives & Contents (JL C&C)', period: '2014.06 – Recent', location: 'JL C&C', krOrg: '대표 / JL C&C', logo: '/images/logos/jl.png' },
+  { position: 'Assistant Professor', organization: "Dongduk Women's University", period: '2025.09 – Present', location: 'Division of Business Administration, College of Business', krOrg: '조교수 / 동덕여자대학교 경영대학 경영융합학부', logo: logoDwu },
+  { position: 'Director', organization: 'FINDS Lab.', period: '2025.06 – Present', location: 'FINDS Lab.', krOrg: '디렉터 / FINDS Lab.', logo: logoFinds },
+  { position: 'Lecturer', organization: 'Kangnam University', period: '2025.03 – 2026.02', location: 'Department of Electronic and Semiconductor Engineering', krOrg: '강사 / 강남대학교 공과대학 전자반도체공학부', logo: logoKangnam },
+  { position: 'Lecturer', organization: 'Korea University', period: '2025.03 – 2026.02', location: 'Digital Business Major, Division of Convergence Business', krOrg: '강사 / 고려대학교 글로벌비즈니스대학 융합경영학부 디지털비즈니스전공', logo: logoKorea },
+  { position: 'Lecturer', organization: 'Kyung Hee University', period: '2024.03 – 2024.08', location: 'Department of Industrial and Management Systems Engineering', krOrg: '강사 / 경희대학교 공과대학 산업경영공학과', logo: logoKyunghee },
+  { position: 'Research Consultant', organization: 'WorldQuant Brain', period: '2022.06 – Present', location: 'WorldQuant Brain', krOrg: '연구 컨설턴트 / 월드퀀트 브레인', logo: logoWorldquant },
+  { position: 'Intern', organization: 'EY Consulting', period: '2020.03 – 2020.05', location: 'Performance Improvement Department', krOrg: '인턴 / EY컨설팅 성과개선팀', logo: logoEy },
+  { position: 'Founder', organization: 'JL Creatives & Contents (JL C&C)', period: '2014.06 – Recent', location: 'JL C&C', krOrg: '대표 / JL C&C', logo: logoJl },
 ]
 
 const affiliations = [
@@ -108,12 +108,12 @@ const affiliations = [
 ]
 
 const activities = [
-  { name: 'CAPTIMA', logo: '/images/logos/captima.png' },
-  { name: 'KFAC', logo: '/images/logos/kfac.png' },
-  { name: 'MENSA Korea', logo: '/images/logos/mensa.png' },
-  { name: 'FIELD', logo: '/images/logos/field.png' },
-  { name: 'FBA Quant', logo: '/images/logos/fba.png' },
-  { name: 'DadingCoding', logo: '/images/logos/dading.png' },
+  { name: 'CAPTIMA', logo: logoCaptima },
+  { name: 'KFAC', logo: logoKfac },
+  { name: 'MENSA Korea', logo: logoMensa },
+  { name: 'FIELD', logo: logoField },
+  { name: 'FBA Quant', logo: logoFba },
+  { name: 'DadingCoding', logo: logoDading },
 ]
 
 const researchInterests = [
@@ -194,7 +194,7 @@ export const MembersDirectorTemplate = () => {
       <div className="relative w-full h-332 overflow-hidden">
         <div
           className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: 'url(/images/banner/2.png)' }}
+          style={{ backgroundImage: `url(${banner2})` }}
         />
         <div className="absolute inset-0 bg-black/40" />
         <div className="relative h-full flex items-center justify-center">
@@ -209,7 +209,7 @@ export const MembersDirectorTemplate = () => {
         <div className="flex items-center gap-10">
           <Link to="/" className="text-gray-400 hover:text-primary transition-colors">
             <Home size={16} />
-        </Link>
+          </Link>
           <span className="text-[#cdcdcd]">›</span>
           <span className="text-base text-gray-400">Members</span>
           <span className="text-[#cdcdcd]">›</span>
@@ -222,20 +222,20 @@ export const MembersDirectorTemplate = () => {
         <div className="flex flex-col lg:flex-row gap-60">
           {/* Left Column: Profile Card & Quick Info */}
           <aside className="lg:w-380 flex flex-col gap-40">
-        {/* Profile Card */}
+            {/* Profile Card */}
             <div className="bg-white border border-gray-100 rounded-3xl p-32 shadow-sm sticky top-40">
               <div className="flex flex-col items-center text-center mb-32">
                 <div className="size-200 bg-gray-100 rounded-2xl overflow-hidden mb-24 shadow-inner border border-gray-50">
-              <img
-                src="/images/members/director.jpg"
-                alt="Prof. Insu Choi"
-                className="w-full h-full object-cover"
-                onError={(e) => {
-                  e.currentTarget.style.display = 'none'
+                  <img
+                    src={directorImg}
+                    alt="Prof. Insu Choi"
+                    className="w-full h-full object-cover"
+                    onError={(e) => {
+                      e.currentTarget.style.display = 'none'
                       e.currentTarget.parentElement!.innerHTML = '<div class="w-full h-full flex items-center justify-center text-64">👨‍🏫</div>'
-                }}
-              />
-            </div>
+                    }}
+                  />
+                </div>
                 <h2 className="text-2xl font-bold text-gray-900 mb-4">Insu Choi, Ph.D.</h2>
                 <p className="text-lg text-gray-500 font-medium">최인수</p>
                 <div className="mt-16 flex items-center gap-8 px-16 py-8 bg-primary/5 text-primary text-sm font-semibold rounded-full border border-primary/10">

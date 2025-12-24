@@ -3,6 +3,9 @@ import { Link } from 'react-router-dom'
 import { Calendar, Home } from 'lucide-react'
 import { useStoreModal } from '@/store/modal'
 
+// Image Imports
+import banner4 from '@/assets/images/banner/4.png'
+
 interface NewsItem {
   id: string;
   title: string;
@@ -125,7 +128,7 @@ export const ArchivesNewsTemplate = () => {
       <div className="relative w-full h-332 overflow-hidden">
         <div
           className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: 'url(/images/banner/4.png)' }}
+          style={{ backgroundImage: `url(${banner4})` }}
         />
         <div className="absolute inset-0 bg-black/40" />
         <div className="relative h-full flex items-center justify-center">
