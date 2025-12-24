@@ -150,7 +150,7 @@ export const MembersDirectorTemplate = () => {
   const { showModal } = useStoreModal()
 
   useEffect(() => {
-    fetch('/data/reviewer.json')
+    fetch('/findslab-test/data/reviewer.json')
       .then((res) => res.json())
       .then((data: ReviewerData) => {
         setReviewerData(data)

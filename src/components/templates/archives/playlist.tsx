@@ -20,7 +20,7 @@ export const ArchivesPlaylistTemplate = () => {
   useEffect(() => {
     const fetchPlaylists = async () => {
       try {
-        const response = await fetch('/data/playlist/ischoi.json')
+        const response = await fetch('/findslab-test/data/playlist/ischoi.json')
         const text = await response.text()
         const cleaned = text.replace(/,(\s*[\}\]])/g, '$1')
         const data = JSON.parse(cleaned)
@@ -55,7 +55,7 @@ export const ArchivesPlaylistTemplate = () => {
       <div className="relative w-full h-332 overflow-hidden">
         <div
           className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: 'url(/images/banner/4.png)' }}
+          style={{ backgroundImage: `url(${banner4})` }}
         />
         <div className="absolute inset-0 bg-black/40" />
         <div className="relative h-full flex items-center justify-center">

@@ -2,6 +2,10 @@ import { memo } from 'react'
 import { Link } from 'react-router-dom'
 import { Copy, Home } from 'lucide-react'
 
+// Image Imports
+import banner1 from '@/assets/images/banner/1.png'
+import locationImg from '@/assets/images/location/1.png'
+
 export const LocationTemplate = () => {
   const handleCopyAddress = () => {
     const address = '(02748) 서울특별시 성북구 화랑로13길 60 동덕여자대학교 인문관 706호'
@@ -14,7 +18,7 @@ export const LocationTemplate = () => {
       <div className="relative w-full h-332 overflow-hidden">
         <div
           className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: 'url(/images/banner/1.png)' }}
+          style={{ backgroundImage: `url(${banner1})` }}
         />
         <div className="absolute inset-0 bg-black/40" />
         <div className="relative h-full flex items-center justify-center">
@@ -59,7 +63,7 @@ export const LocationTemplate = () => {
             {/* Building Image with Overlay */}
             <div className="relative h-254 overflow-hidden">
               <img
-                src="/images/location/1.png"
+                src={locationImg}
                 alt="Building"
                 className="w-full h-full object-cover"
               />

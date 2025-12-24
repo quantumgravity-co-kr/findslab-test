@@ -21,6 +21,16 @@ import type { Publication, AuthorsData } from '@/types/data'
 
 // Image Imports
 import banner3 from '@/assets/images/banner/3.png'
+import pubIcon1 from '@/assets/images/icons/publications/1.png'
+import pubIcon2 from '@/assets/images/icons/publications/2.png'
+import pubIcon3 from '@/assets/images/icons/publications/3.png'
+import pubIcon4 from '@/assets/images/icons/publications/4.png'
+import pubIcon5 from '@/assets/images/icons/publications/5.png'
+import pubIcon6 from '@/assets/images/icons/publications/6.png'
+import pubIcon7 from '@/assets/images/icons/publications/7.png'
+import pubIcon8 from '@/assets/images/icons/publications/8.png'
+
+const pubIcons = [pubIcon1, pubIcon2, pubIcon3, pubIcon4, pubIcon5, pubIcon6, pubIcon7, pubIcon8]
 
 // 필터 모달 컴포넌트
 const FilterModal = ({
@@ -206,8 +216,8 @@ export const PublicationsTemplate = () => {
     }
 
     Promise.all([
-      safeJsonFetch('/data/pubs.json'),
-      safeJsonFetch('/data/authors.json'),
+      safeJsonFetch('/findslab-test/data/pubs.json'),
+      safeJsonFetch('/findslab-test/data/authors.json'),
     ])
       .then(([pubsData, authorsData]) => {
         setPublications(pubsData)
@@ -414,7 +424,7 @@ export const PublicationsTemplate = () => {
                 >
                   <div className="size-46 flex-shrink-0">
                     <img
-                      src={`/images/icons/publications/${index + 1}.png`}
+                      src={pubIcons[index]}
                       alt={item.label}
                       className="w-full h-full object-contain"
                     />

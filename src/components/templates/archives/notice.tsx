@@ -43,7 +43,7 @@ const NoticeDetailModal = ({ id }: { id: string }) => {
   const [loading, setLoading] = useState(true)
 
   useEffect(() => {
-    fetch(`/data/notice/${id}.md`)
+    fetch(`/findslab-test/data/notice/${id}.md`)
       .then(res => res.text())
       .then(text => {
         const { data, content } = parseMarkdown(text)
@@ -65,7 +65,7 @@ const NoticeDetailModal = ({ id }: { id: string }) => {
         processedContent = processedContent
           .replace(/{{\s*site\.static_files\s*\|[^}]*}}/g, '')
           .replace(/{{\s*[^}]*relative_url\s*}}/g, '')
-          .replace(/\/assets\/img\//g, '/images/')
+          .replace(/\/assets\/img\//g, '/findslab-test/images/')
 
         setContent(processedContent)
         setLoading(false)
@@ -96,7 +96,7 @@ export const ArchivesNoticeTemplate = () => {
       try {
         const results = await Promise.all(
           noticeFiles.map(async (file) => {
-            const response = await fetch(`/data/notice/${file}`)
+            const response = await fetch(`/findslab-test/data/notice/${file}`)
             const text = await response.text()
             const { data } = parseMarkdown(text)
             return {

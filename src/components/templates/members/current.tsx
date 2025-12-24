@@ -38,7 +38,7 @@ export const MembersCurrentTemplate = () => {
 
     Promise.all(
       memberFiles.map((file) =>
-        safeJsonFetch(`/data/members/${file}`)
+        safeJsonFetch(`/findslab-test/data/members/${file}`)
           .catch(() => null)
       )
     )
@@ -167,7 +167,7 @@ export const MembersCurrentTemplate = () => {
                           <div className="w-[80px] h-[80px] bg-gray-100 rounded-full flex items-center justify-center flex-shrink-0 overflow-hidden">
                             {member.avatar ? (
                               <img
-                                src={member.avatar.replace('/assets/img/', '/images/')}
+                                src={member.avatar.replace('/assets/img/', '/findslab-test/images/')}
                                 alt={member.name.ko}
                                 className="w-full h-full object-cover"
                                 onError={(e) => {

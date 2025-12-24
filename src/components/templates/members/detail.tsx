@@ -26,7 +26,7 @@ export const MembersDetailTemplate = ({ memberId }: Props) => {
       return JSON.parse(cleaned)
     }
 
-    safeJsonFetch(`/data/members/${memberId}.json`)
+    safeJsonFetch(`/findslab-test/data/members/${memberId}.json`)
       .then((data: MemberData) => {
         setMember(data)
         setLoading(false)
@@ -61,7 +61,7 @@ export const MembersDetailTemplate = ({ memberId }: Props) => {
           <div className="w-160 h-160 bg-gray-100 rounded-full flex items-center justify-center overflow-hidden mb-24 border-4 border-gray-50">
             {member.avatar ? (
               <img
-                src={member.avatar.replace('/assets/img/', '/images/')}
+                src={member.avatar.replace('/assets/img/', '/findslab-test/images/')}
                 alt={member.name.ko}
                 className="w-full h-full object-cover"
               />

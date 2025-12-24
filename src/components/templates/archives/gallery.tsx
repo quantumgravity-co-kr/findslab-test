@@ -54,7 +54,7 @@ export const ArchivesGalleryTemplate = () => {
       try {
         const results = await Promise.all(
           galleryFolders.map(async (folder) => {
-            const response = await fetch(`/data/gallery/${folder}/index.md`)
+            const response = await fetch(`/findslab-test/data/gallery/${folder}/index.md`)
             const text = await response.text()
             const { data } = parseMarkdown(text)
             return {
@@ -122,7 +122,7 @@ export const ArchivesGalleryTemplate = () => {
                 <div className="aspect-[4/3] bg-[#f9fafb] flex items-center justify-center overflow-hidden">
                   {item.thumb ? (
                     <img
-                      src={`/data/gallery/${item.id}/${item.thumb}`}
+                      src={`/findslab-test/data/gallery/${item.id}/${item.thumb}`}
                       alt={item.title}
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                     />

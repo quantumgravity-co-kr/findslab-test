@@ -93,7 +93,7 @@ export const HomeTemplate = () => {
         const newsFiles = ['2025-09-01-1.md', '2025-06-14-1.md']
         const newsResults = await Promise.all(
           newsFiles.map(async (file) => {
-            const response = await fetch(`/data/news/${file}`)
+            const response = await fetch(`/findslab-test/data/news/${file}`)
             const text = await response.text()
             const { data } = parseMarkdown(text)
             return { title: data.title, date: data.date }
@@ -105,7 +105,7 @@ export const HomeTemplate = () => {
         const noticeFiles = ['2025-10-06-1.md', '2025-09-01-1.md']
         const noticeResults = await Promise.all(
           noticeFiles.map(async (file) => {
-            const response = await fetch(`/data/notice/${file}`)
+            const response = await fetch(`/findslab-test/data/notice/${file}`)
             const text = await response.text()
             const { data } = parseMarkdown(text)
             return { title: data.title, date: data.date }
