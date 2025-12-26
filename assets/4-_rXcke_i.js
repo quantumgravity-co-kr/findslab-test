@@ -1,1 +1,0 @@
-import{c as e}from"./index-DXV8imko.js";const t=[["path",{d:"M8 2v4",key:"1cmpym"}],["path",{d:"M16 2v4",key:"4m81vk"}],["rect",{width:"18",height:"18",x:"3",y:"4",rx:"2",key:"1hopcy"}],["path",{d:"M3 10h18",key:"8toen8"}]],c=e("calendar",t),n="/findslab-test/assets/4-NHeGgiY8.png";export{c as C,n as b};
